@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>開幕邀請函 | 冠聲視聽研究所</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FDFBF7; /* 溫暖米白底色 */
+            color: #3D352E; /* 深木炭棕文字 */
+        }
+        .font-serif-tc {
+            font-family: 'Noto Serif TC', serif;
+        }
+        .bg-wood-dark {
+            background-color: #4A3B32; /* 深木質色 */
+        }
+        .bg-wood-light {
+            background-color: #F4EBE1; /* 淺木質感背景 */
+        }
+        .text-accent {
+            color: #A3704C; /* 暖大地色標題/按鈕 Accent */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 主視覺區塊 (Hero Section) -->
+    <header class="relative bg-wood-dark text-white text-center py-20 px-4 shadow-lg">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <span class="tracking-widest uppercase text-xs md:text-sm text-amber-200/80">冠聲視聽研究所</span><br>
+            <span class="tracking-widest uppercase text-xs md:text-sm text-amber-200/80">Grand Opening Invitation</span>
+            <h1 class="text-3xl md:text-5xl font-serif-tc font-bold tracking-wide leading-relaxed">
+                極致聲學 ‧ 質感重現
+            </h1>
+            <p class="text-stone-300 text-base md:text-lg max-w-xl mx-auto font-light leading-relaxed">
+                誠摯邀請您參與我們的門市開幕儀式，共同品味前後級擴大機、極致串流與頂級聲響所帶來的聲音美學。
+            </p>
+            <div class="pt-6">
+                <!-- 請替換為您上傳至 Imgur 等圖床的主視覺圖片網址 -->
+                <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80" 
+                     alt="門市主視覺圖片" 
+                     class="w-full h-64 md:h-96 object-cover rounded-lg shadow-2xl mx-auto border-2 border-stone-600/30">
+            </div>
+        </div>
+    </header>
+
+    <!-- 活動時間與資訊 (Details Section) -->
+    <section class="max-w-3xl mx-auto py-16 px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-serif-tc font-bold text-accent mb-8">開幕盛會資訊</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left bg-wood-light p-8 rounded-xl shadow-sm border border-stone-200/60">
+            <div class="space-y-3">
+                <div class="flex items-center space-x-3 text-accent font-semibold">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span>開幕時間</span>
+                </div>
+                <p class="text-lg font-medium">2026 年 10 月 6 日（星期二）</p>
+                <p class="text-stone-600">下午 14:00 正式開始</p>
+            </div>
+            <div class="space-y-3">
+                <div class="flex items-center space-x-3 text-accent font-semibold">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <span>活動地點</span>
+                </div>
+                <p class="text-lg font-medium">台北市萬華區艋舺大道55號1樓</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=台北市萬華區艋舺大道55號" 
+                   target="_blank" 
+                   class="inline-flex items-center text-sm text-accent underline hover:text-stone-900 mt-1 transition">
+                    開啟 Google 地圖導航 &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google 地圖內嵌區塊 -->
+    <section class="max-w-4xl mx-auto px-6 mb-16">
+        <div class="rounded-xl overflow-hidden shadow-md border border-stone-200">
+            <iframe 
+                class="w-full h-80 border-0" 
+                src="https://maps.google.com/maps?q=台北市萬華區艋舺大道55號&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- RSVP 出席回覆區塊 (Google 表單內嵌) -->
+    <section class="bg-wood-light py-16 px-6">
+        <div class="max-w-2xl mx-auto bg-white p-4 md:p-8 rounded-2xl shadow-lg border border-stone-200/80 text-center">
+            <h2 class="text-2xl font-serif-tc font-bold text-accent mb-2">出席回覆</h2>
+            <p class="text-stone-500 text-sm mb-6">為利門市備餐與接待，請於 10 月 02 日前填寫回覆。</p>
+            
+            <!-- 請將下方 src 的網址替換為您的 Google 表單內嵌連結 -->
+            <div class="w-full overflow-hidden rounded-xl">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdmZE1Ie_O29r2BZyriz46REh-tEQUuD50AET8xP8m2lm-Jig/viewform?embedded=true" 
+                    width="100%" 
+                    height="750" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    class="w-full">
+                    載入中…
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="text-center py-8 text-xs text-stone-400">
+        &copy; 2026 頂級音響門市 All Rights Reserved.
+    </footer>
+
+</body>
+</html>
